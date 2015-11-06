@@ -14,7 +14,7 @@
 			$this->DGSTORAGE["SEARCHINDEXLIMIT"]=32;
 			$this->DGSTORAGE["SEARCHCACHELIMIT"]=32;
 			$this->DGSTORAGE["PROPCACHELIMIT"]=32;
-			$this->DGSTORAGE["SAFETY"]=True;
+			$this->DGSTORAGE["SAFETY"]=False;
 			
 			$this->DGSTORAGE["Name"]=NULL;
 			$this->DGSTORAGE["TimeStamp"]='';
