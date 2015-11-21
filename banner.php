@@ -8,7 +8,7 @@
 			        <span class="icon-bar"></span>
 			      </button>
 				  <span class="glyphicon glyphicon-music navbar-brand" aria-hidden="true"></span> 
-			      <a class="navbar-brand" href="#">石化好声音</a>
+			      <a class="navbar-brand" href="http://121.42.141.42/b">石化好声音</a>
 			    </div>
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
