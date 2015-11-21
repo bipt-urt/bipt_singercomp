@@ -1,5 +1,3 @@
 <ul class="nav nav-pills nav-justified">
-  <li role="presentation"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Profile</a></li>
-  <li role="presentation"><a href="#">Messages</a></li>
+  <li role="presentation"><a href="#">共青团北京石油化工学院委员会</a></li>
 </ul>

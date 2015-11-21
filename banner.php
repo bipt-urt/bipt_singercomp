@@ -7,14 +7,14 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-				  <span class="glyphicon glyphicon-superscript navbar-brand" aria-hidden="true"></span> 
-			      <a class="navbar-brand" href="#">Your Website</a>
+				  <span class="glyphicon glyphicon-music navbar-brand" aria-hidden="true"></span> 
+			      <a class="navbar-brand" href="#">石化好声音</a>
 			    </div>
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
 			        <li class="active"><a href="#"><?php print($GLOBALS["title"]); ?><span class="sr-only">(current)</span></a></li>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">more<span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">存档</a></li>
 			            <li><a href="#">图片</a></li>
@@ -28,13 +28,13 @@
 			      </ul>
 			      <form class="navbar-form navbar-right" role="search" action="#">
 			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="搜索一些内容">
+			          <input type="text" class="form-control" placeholder="搜索好声音">
 			        </div>
 			        <button type="submit" class="btn btn-default">搜索</button>
 			      </form>
 			      <ul class="nav navbar-nav navbar-right">
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户<span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">username<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">个人中心</a></li>
 			            <li><a href="#">收藏</a></li>

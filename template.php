@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
-		<?php $title="" ?>
+		<?php $title=""; ?>
 		<?php require_once('header.php'); ?>
 	</head>
 	<body>
