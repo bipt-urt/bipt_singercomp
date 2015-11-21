@@ -1,4 +1,4 @@
-<?php require_once('include.php'); ?>
+﻿<?php require_once('include.php'); ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
@@ -9,47 +9,45 @@
 	<body>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>这里有一个标题，暂时不见了</h1>
-				<p>这里有一个背景，也不见了</p>
+				<h1>北京石油化工学院 我是歌手</h1>
+				<p>这里有一个背景，不过不见了</p>
 				<p>这里还应该有一些话，不过还没想好</p>
-				<p><a class="btn btn-primary btn-lg" href="#" role="button">开始投票</a></p>
+				<p><a class="btn btn-primary btn-lg" href="#select" role="button">开始投票</a></p><a name="select"></a>
 			</div>
 		</div>
 		<div class="container">
 			<?php include_once("banner.php"); ?>
 			<div class="alert alert-success" role="alert"><b>投票成功！</b>您的投票已经计入系统，感谢您的支持。</div>
 			<div class="row">
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-				<img src="http://wanzao2.b0.upaiyun.com/system/avatars/1850984/original/20130629201621190.jpg" alt="...">
-				<div class="caption">
-					<h3>王尼玛</h3>
-					<p>北京石油化工大学计153班王尼玛同学是一个团结友爱的好同学，他兼职暴走大事件的主持人。</p>
-					<p><a href="#" class="btn btn-primary" role="button">投票</a> <a href="#" class="btn btn-default" role="button">分享</a></p>
-				</div>
-				</div>
+				<?php
+					$dbHandle=new DGStorage();
+					$dbHandle->select("/var/lib/bipt");
+					$res=$dbHandle->fetch();
+					foreach($res as &$item)
+					{
+print("				<div class=\"col-sm-6 col-md-4\">");
+print("					<div class=\"thumbnail\">");
+print("					<img src=\"http://wanzao2.b0.upaiyun.com/system/avatars/1850984/original/20130629201621190.jpg\" alt=\"...\">");
+print("					<div class=\"caption\">");
+print("						<h3>".$item["prop"]["name"]."</h3>");
+print("						<p>".$item["prop"]["description"]."</p>");
+//print("						<audio src=\"//121.42.141.42/b/song/".$item["key"].".mp3\" controls=\"controls\" preload=\"meta\"></audio>");
+//屏蔽，可能导致服务器资源耗尽
+print("						<p><a href=\"http://121.42.141.42/b/detail.php?id=".$item["key"]."\" class=\"btn btn-primary\" role=\"button\">给他投票</a> <a href=\"#\" class=\"btn btn-default\" role=\"button\">分享</a></p>");
+print("					</div>");
+print("					</div>");
+print("				</div>");
+					};
+				?>
 			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-				<img src="http://wanzao2.b0.upaiyun.com/system/avatars/1850984/original/20130629201621190.jpg" alt="...">
-				<div class="caption">
-					<h3>王尼玛</h3>
-					<p>北京石油化工大学计153班王尼玛同学是一个团结友爱的好同学，他兼职暴走大事件的主持人。</p>
-					<p><a href="#" class="btn btn-primary" role="button">投票</a> <a href="#" class="btn btn-default" role="button">分享</a></p>
+				<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">服务器置标</h3>
+				</div>
+				<div class="panel-body">
+					<pre><?php var_dump($_SERVER); ?></pre>
 				</div>
 				</div>
-			</div>
-			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-				<img src="http://wanzao2.b0.upaiyun.com/system/avatars/1850984/original/20130629201621190.jpg" alt="...">
-				<div class="caption">
-					<h3>王尼玛</h3>
-					<p>北京石油化工大学计153班王尼玛同学是一个团结友爱的好同学，他兼职暴走大事件的主持人。</p>
-					<p><a href="#" class="btn btn-primary" role="button">投票</a> <a href="#" class="btn btn-default" role="button">分享</a></p>
-				</div>
-				</div>
-			</div>
-			</div>
 				<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">调试</h3>
