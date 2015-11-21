@@ -8,6 +8,17 @@
 	<body>
 		<div class="container">
 			<?php include_once("banner.php"); ?>
+			<form method="post" autocomplete="off" action="praise.php">
+			<input name="id" type="hidden" value="<?php print($_GET["id"]); ?>" />
+			<?php
+				if(isset($_GET["praise"]))
+				{
+					if($_GET["praise"]==True)
+					{
+						print("<div class=\"alert alert-success\" role=\"alert\"><b>投票成功！</b>您的投票已经计入系统，感谢您的支持。</div>");
+					}
+				}
+			?>
 			<?php
 				if(!isset($_GET["id"]))
 				{
@@ -30,14 +41,14 @@ print("			<h1>".$item["prop"]["name"]."</h1>");
 print("			<p>".$item["prop"]["description"]."</p>");
 print("			<audio src=\"http://121.42.141.42/b/song/".$item["prop"]["id"].".mp3\" controls=\"controls\">您的浏览器不支持在线播放选手歌曲</audio>");
 print("<p></p>");
-print("			<button class=\"btn btn-warning\">&nbsp;+".$item["prop"]["praise"]."&nbsp;</button>");
+print("			<button type=\"submit\" class=\"btn btn-warning\">&nbsp;+".$item["prop"]["praise"]."&nbsp;</button>");
 print("			<button class=\"btn btn-default\">分享</button>");
 print("			</div>");
 print("			</div>");
 print("			</div>");
 				}
 			?>
-
+			</form>
 			<?php include_once("footer.php"); ?>
 	</div>
 	</body>

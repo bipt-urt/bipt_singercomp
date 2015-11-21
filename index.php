@@ -17,7 +17,6 @@
 		</div>
 		<div class="container">
 			<?php include_once("banner.php"); ?>
-			<div class="alert alert-success" role="alert"><b>投票成功！</b>您的投票已经计入系统，感谢您的支持。</div>
 			<div class="row">
 				<?php
 					$dbHandle=new DGStorage();
