@@ -1,37 +1,46 @@
-# 北京石油化工学院 2015年歌手大赛仓库
-本仓库存放2015年北京石油化工学院歌手大赛微信平台的开源代码部分。采用PHP+DGStorage编写。后台数据分析部分采用Python3编写。
+# Beijing Institute of petrochemical technology - 2015 I'm the singer Championships
+This repo stored all of the code of 2015 I'm the singer Championships.
 
-#许可证
-本仓库全部代码可自由编译，复制，演绎和再分发，但任何行为的使用之前必须告知@dgideas。
+#License
+You are free to:
 
-#跨浏览器兼容性
-网页中的在线播放器组件(audio)，适用于以下版本的浏览器：
-* Firefox11+ (2012年)
-* Internet Explorer 9+ (2011年，不支持Windows XP)
-* Opera 10.53+ (2010年)
+* Share — copy and redistribute the material in any medium or format
+* Adapt — remix, transform, and build upon the material
+* for any purpose, even commercially.
+* The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+See:http://creativecommons.org/licenses/by/4.0/
+
+#Cross-browser compatibility
+The <audio> label for online media, works in the following browsers
+* Firefox11+ (2012+)
+* Internet Explorer 9+ (2011+，donesn't support Windows XP)
+* Opera 10.53+ (2010+)
 * Safari 
-* Chrome 10+ (2011年)
+* Chrome 10+ (2011+)
 
-#使用的技术
-限制访问
+#Techniques used
+Access Limited
 
 * *Cookie *
 
 * *HTML5 LocalStorage *
 
-在线音频
+* *HTTP Agent Filter*
+
+Online audio
 
 * *HTML5 audio *
 
-#主数据库
-由DGStorage强力驱动
+#Database
+Powered By DGStorage
 
 ```https://github.com/DGideas/DGStorage```
 
-name:歌手名称
-id:歌手的id
-music:歌手的歌曲
-praise:点赞数
-pic:歌手的图片
-phone:歌手的联系方式
-description:歌手的描述
+name:Singer's name
+id:Singer's id
+music:Singer's music url
+praise:The number of praise
+pic:The picture of the singer
+phone:The contact of the singer
+description:The description of the singer
