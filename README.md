@@ -37,10 +37,10 @@ Powered By DGStorage
 
 https://github.com/DGideas/DGStorage
 
-name:Singer's name
-id:Singer's id
-music:Singer's music url
-praise:The number of praise
-pic:The picture of the singer
-phone:The contact of the singer
-description:The description of the singer
+* name:Singer's name
+* id:Singer's id
+* music:Singer's music url
+* praise:The number of praise
+* pic:The picture of the singer
+* phone:The contact of the singer
+* description:The description of the singer
