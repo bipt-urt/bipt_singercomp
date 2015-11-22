@@ -35,7 +35,7 @@ Online audio
 #Database
 Powered By DGStorage
 
-```https://github.com/DGideas/DGStorage```
+https://github.com/DGideas/DGStorage
 
 name:Singer's name
 id:Singer's id
