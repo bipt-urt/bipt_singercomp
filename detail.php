@@ -46,9 +46,9 @@ print("			<h1>".$item["prop"]["name"]."</h1>");
 print("			<p>".$item["prop"]["description"]."</p>");
 print("			<audio src=\"http://121.42.141.42/b/song/".$item["prop"]["id"].".mp3\" controls=\"controls\">您的浏览器不支持在线播放选手歌曲</audio>");
 print("<p></p>");
-if(isset($_GET["praise"]))
+if(isset($_GET["praise"])||isset($_COOKIE["bipt_praise_".$_GET["id"]]))
 {
-	print("			<button class=\"btn btn-default\">&nbsp;+".$item["prop"]["praise"]."&nbsp;</button>");
+	print("			<button type=\"button\" class=\"btn btn-default\">&nbsp;+".$item["prop"]["praise"]."&nbsp;</button>");
 }
 else
 {

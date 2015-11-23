@@ -1,6 +1,13 @@
 <?php require_once('include.php'); ?>
 <?php
-	setcookie("bipt_praise_".$_POST["id"],"true",time()+72000);
+	if(isset($_COOKIE["bipt_praise_".$_POST["id"]]))
+	{
+		header("location:http://121.42.141.42/b/detail.php?praise=true&id=".$_POST["id"]);
+	}
+	else
+	{
+		setcookie("bipt_praise_".$_POST["id"],"true",time()+72000);
+	}
 ?>
 <!DOCTYPE html>
 <html lang="zh-CN">

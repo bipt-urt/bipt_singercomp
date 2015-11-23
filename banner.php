@@ -16,13 +16,13 @@
 			        <li class="dropdown">
 			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">存档</a></li>
+			            <li><a href="#">访谈</a></li>
 			            <li><a href="#">图片</a></li>
 			            <li><a href="#">视频</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#">选项</a></li>
+			            <li><a href="#">共青团北京石油化工学院委员会</a></li>
 			            <li role="separator" class="divider"></li>
-			            <li><a href="#">注销</a></li>
+			            <li><a href="#">北京石油化工学院</a></li>
 			          </ul>
 			        </li>
 			      </ul>

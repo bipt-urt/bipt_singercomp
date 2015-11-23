@@ -49,7 +49,7 @@ print("				</div>");
 					}
 				?>
 			</div>
-			<hr />
+			<?php /*
 			<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">调试</h3>
@@ -58,6 +58,7 @@ print("				</div>");
 				<pre><?php var_dump($GLOBALS); ?></pre>
 			</div>
 			</div>
+			*/ ?>
 		</div>
 			<?php include_once("footer.php"); ?>
 	</body>
