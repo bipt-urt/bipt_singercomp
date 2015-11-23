@@ -39,27 +39,17 @@ print("				</div>");
 					};
 				?>
 			</div>
-			<div class="col-md-3 col-sm-4 col-xs-6">
-				<ul class="list-group">
-					<?php
-						$res=$dbHandle->sort("praise","DESC",10);
-						foreach($res as &$item)
-						{
-							$detail=$dbHandle->uid($item["uid"]);
-							print("<li class=\"list-group-item\"><span class=\"badge\">".$detail["prop"]["praise"]."</span>".$detail["prop"]["name"]."</li>");
-						}
-					?>
-				</ul>
+			<div class="list-group">
+				<?php
+					$res=$dbHandle->sort("praise","DESC",10);
+					foreach($res as &$item)
+					{
+						$detail=$dbHandle->uid($item["uid"]);
+						print("<a href=\"http://121.42.141.42/b/detail.php?id=".$detail["key"]."\" class=\"list-group-item\"><span class=\"badge\">".$detail["prop"]["praise"]."</span>".$detail["prop"]["name"]."</a>");
+					}
+				?>
 			</div>
 			<hr />
-			<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h3 class="panel-title">服务器置标</h3>
-			</div>
-			<div class="panel-body">
-				<pre><?php var_dump($_SERVER); ?></pre>
-			</div>
-			</div>
 			<div class="panel panel-primary">
 			<div class="panel-heading">
 				<h3 class="panel-title">调试</h3>

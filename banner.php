@@ -26,7 +26,7 @@
 			          </ul>
 			        </li>
 			      </ul>
-			      <form class="navbar-form navbar-right" role="search" action="#">
+			      <!--<form class="navbar-form navbar-right" role="search" action="#">
 			        <div class="form-group">
 			          <input type="text" class="form-control" placeholder="搜索好声音">
 			        </div>
@@ -42,7 +42,7 @@
 			            <li role="separator" class="divider"></li>
 			            <li><a href="#">注销</a></li>
 			        </li>
-			      </ul>
+			      </ul>-->
 			    </div>
 			  </div>
 			</nav>
