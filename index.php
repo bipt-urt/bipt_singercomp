@@ -39,6 +39,19 @@ print("				</div>");
 					};
 				?>
 			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<ul class="list-group">
+					<?php
+						$res=$dbHandle->sort("praise","DESC",10);
+						foreach($res as &$item)
+						{
+							?><pre><?php var_dump($GLOBALS); ?>
+							</pre><?php
+							print("<li class=\"list-group-item\"><span class=\"badge\">".$item["prop"]["priase"]."</span>".$item["prop"]["name"]."</li>");
+						}
+					?>
+				</ul>
+			</div>
 				<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">服务器置标</h3>
